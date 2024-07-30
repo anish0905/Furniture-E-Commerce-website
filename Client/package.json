@@ -10,7 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@material-tailwind/react": "^2.1.9",
+=======
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.5",
+    "@mui/material": "^5.16.5",
+>>>>>>> d0e9d46a173ab281865e1fa19a302c8177600892
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
