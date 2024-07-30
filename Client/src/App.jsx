@@ -1,12 +1,13 @@
 import { useState } from "react";
+import HomePage from "./components/HomePage";
 
 import "./App.css";
-import Home from "./components/Home";
+
 
 function App() {
   return (
     <>
-      <div className="bg-red-800">
+      <div >
         <HomePage />
       </div>
     </>
