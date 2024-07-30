@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./Navbar";
 
-const HomePage = () => {
+const Home = () => {
   return (
-    <div className='bg-black text-center text-white py-4'>
-      <h1>hi.........................</h1>
+    <div>
+      <Navbar />
+      <h1 className="">jhjhj</h1>
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default Home;
