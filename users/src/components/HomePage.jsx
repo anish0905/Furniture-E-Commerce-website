@@ -8,6 +8,8 @@ import DealsHeader from "./DealsHeader";
 
 import Testimonials from "./Testimonials";
 import OfferSales from "./OfferSales";
+import ProductDescription from "./ProductDescription";
+import { Cateroy } from "./Cateroy";
 
 const HomePage = () => (
   <div className="w-full">
@@ -17,6 +19,8 @@ const HomePage = () => (
     </div>
     <BannerSlider />
     <CardHome />
+    <ProductDescription/>
+    <Cateroy/>
     <DealsHeader />
     <OfferSales />
     {/* <SalesAdOfferHomepage /> */}
