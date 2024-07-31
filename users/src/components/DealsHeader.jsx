@@ -30,7 +30,7 @@ const DealsHeader = () => {
       <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-center mb-4 animate-slideLeftRight">
         Deals of the Week || Deals of the Day
       </h1>
-      <div className="flex justify-center items-center space-x-4 md:space-x-6 lg:space-x-8">
+      <div className="flex justify-center items-center space-x-3 md:space-x-6 lg:space-x-8">
         {['hours', 'minutes', 'seconds'].map((unit, index) => (
           <div key={index} className="flex flex-col items-center">
             <div className="text-2xl md:text-3xl lg:text-4xl font-bold bg-white text-blue-600 rounded-full p-4 shadow-lg">
