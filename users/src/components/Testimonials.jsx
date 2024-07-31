@@ -68,7 +68,7 @@ const Testimonials = () => {
   return (
     <div className="container mx-auto p-4">
       <h2 className="text-2xl font-bold mb-8 text-center">Testimonials</h2>
-      <Slider {...settings}>
+      <Slider {...settings} className="">
         {testimonials.map((testimonial, index) => (
           <div key={index}>
             <TestimonialCard
