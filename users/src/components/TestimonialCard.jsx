@@ -17,7 +17,10 @@ const TestimonialCard = ({ photo, name, date, rating, description }) => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-r from-white to-gray-100 border border-gray-200 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+    <div
+      className="max-w-full h-full flex flex-col items-center justify-center bg-gradient-to-r from-white
+     to-gray-100 border border-gray-200 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105"
+    >
       <div className="lg:flex block justify-center my-4 items-center gap-10 space-x-4 mb-4">
         <div className="flex flex-col justify-center content-center items-center my-4">
           <img
