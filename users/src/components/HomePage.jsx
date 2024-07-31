@@ -6,6 +6,8 @@ import CardHome from "./CardHome";
 import DealsHeader from "./DealsHeader";
 import SalesAdOfferHomepage from "./SalesAdOfferHomepage";
 
+import Testimonials from "./Testimonials";
+
 const HomePage = () => (
   <div className="w-full">
     <Navbar />
@@ -16,6 +18,7 @@ const HomePage = () => (
     <CardHome />
     <DealsHeader/>
     <SalesAdOfferHomepage/>
+    <Testimonials/>
   </div>
 );
 

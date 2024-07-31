@@ -14,7 +14,7 @@ const DealsHeader = () => {
   function getTimeLeft() {
     const now = new Date();
     const endTime = new Date(now);
-    endTime.setHours(200, 0, 0, 0); // Set to 20:00:00
+    endTime.setHours(20, 0, 0, 0); // Set to 20:00:00
 
     const totalSeconds = Math.max((endTime - now) / 1000, 0);
 
@@ -26,17 +26,17 @@ const DealsHeader = () => {
   }
 
   return (
-    <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-6  shadow-lg my-4">
-      <h1 className="lg:text-3xl text-xl font-extrabold text-center mb-4 animate-slideLeftRight">
+    <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-6 px-4 md:px-8 shadow-lg my-4 w-full">
+      <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-center mb-4 animate-slideLeftRight">
         Deals of the Week || Deals of the Day
       </h1>
-      <div className="flex justify-center items-center space-x-4">
+      <div className="flex justify-center items-center space-x-4 md:space-x-6 lg:space-x-8">
         {['hours', 'minutes', 'seconds'].map((unit, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className="lg:text-4xl text-2xl font-bold bg-white text-blue-600 rounded-full p-4 shadow-lg">
+            <div className="text-2xl md:text-3xl lg:text-4xl font-bold bg-white text-blue-600 rounded-full p-4 shadow-lg">
               {String(timeLeft[unit]).padStart(2, '0')}
             </div>
-            <span className="text-lg mt-2">{unit.charAt(0).toUpperCase() + unit.slice(1)}</span>
+            <span className="text-sm md:text-base lg:text-lg mt-2">{unit.charAt(0).toUpperCase() + unit.slice(1)}</span>
           </div>
         ))}
       </div>

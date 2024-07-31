@@ -3,6 +3,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import SearchIcon from "@mui/icons-material/Search";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,25 +13,26 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-100 p-4 lg:p-8 shadow-md w-full flex items-center justify-between gap-5 px-10">
+    <nav className="bg-gray-100 p-4 lg:p-8 shadow-md w-full flex items-center justify-between gap-5 lg:px-32">
       <div className="lg:text-2xl md:text-xl text-sm font-bold w-1/5">
         <span> Logo</span>
       </div>
-      <div className="relative lg:w-1/2 w-full">
+      <div className="relative lg:w-1/2 w-full flex items-center">
+        <SearchIcon className="absolute left-3 text-gray-500" />
         <input
           type="search"
           placeholder="Search the product"
-          className="border rounded-md p-2 w-full"
+          className="border border-gray-300 rounded-md p-2 pl-10 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div className="flex items-center space-x-4 w-1/4 justify-end hidden sm:flex">
         <div className="flex items-center space-x-2 cursor-pointer">
-          <AccountCircleIcon className="text-4xl" />
-          <span className="text-xl">Login</span>
+          <AccountCircleIcon className="text-5xl" />
+          <span className="text-2xl">Login</span>
         </div>
         <div className="flex items-center space-x-2 cursor-pointer">
-          <ShoppingCartIcon className="text-4xl" />
-          <span className="text-xl">Cart</span>
+          <ShoppingCartIcon className="text-5xlxl" />
+          <span className="text-2xl">Cart</span>
         </div>
       </div>
       <div className="flex sm:hidden">

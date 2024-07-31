@@ -23,29 +23,29 @@ const BannerSlider = () => {
   return (
     <>
     <div>
-      <Slider {...settings} className='my-4 '>
+      <Slider {...settings} className='my-8 '>
         <div>
-          <img src={banner1} alt="Banner 1" style={{ width: '100%', height: '40vh', objectFit: 'cover' }} />
+          <img src={banner1} alt="Banner 1" style={{ width: '100%', height: '70vh', objectFit: 'cover' }} />
         </div>
         <div>
-          <img src={banner2} alt="Banner 2" style={{ width: '100%', height: '40vh', objectFit: 'cover' }} />
+          <img src={banner2} alt="Banner 2" style={{ width: '100%', height: '70vh', objectFit: 'cover' }} />
         </div>
         <div>
-          <img src={banner3} alt="Banner 3" style={{ width: '100%', height: '40vh', objectFit: 'cover' }} />
+          <img src={banner3} alt="Banner 3" style={{ width: '100%', height: '70vh', objectFit: 'cover' }} />
         </div>
         <div>
-          <img src={banner4} alt="Banner 4" style={{ width: '100%', height: '40vh', objectFit: 'cover' }} />
+          <img src={banner4} alt="Banner 4" style={{ width: '100%', height: '70vh', objectFit: 'cover' }} />
         </div>
         <div>
-          <img src={banner5} alt="Banner 5" style={{ width: '100%', height: '40vh', objectFit: 'cover' }} />
+          <img src={banner5} alt="Banner 5" style={{ width: '100%', height: '70vh', objectFit: 'cover' }} />
         </div>
         
       </Slider>
      
     </div>
-    <h1 className='lg:text-3xl text-xl text-center font-bold py-3 my-4'>HomeLine This is Awesome Product</h1>
+    <h1 className='lg:text-6xl text-xl text-center font-bold py-3 my-8'>HomeLine This is Awesome Product</h1>
      <div className='my-4 '>
-     <video src={banner6} style={{ width: '100%', height: '40vh', objectFit: 'cover' }}  autoPlay loop muted />
+     <video src={banner6} style={{ width: '100%', height: '70vh', objectFit: 'cover' }}  autoPlay loop muted />
    </div>
    </>
   );
