@@ -25,7 +25,7 @@ const Navbar2 = () => {
   ];
 
   return (
-    <div className='flex flex-wrap justify-between items-center p-4'>
+    <div className='flex flex-wrap justify-between items-center p-4 lg:px-[20%]'>
       {categories.map((category, index) => (
         <select
           key={index}

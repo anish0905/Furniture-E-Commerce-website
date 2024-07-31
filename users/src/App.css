@@ -1,1 +1,29 @@
+/* Global styles */
 
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0;
+  text-decoration: none;
+  background-color: var(--tw-bg-white);
+  box-sizing: border-box;
+}
+
+.card {
+  height: 400px;
+  width: 100%; /* Full width on mobile */
+  max-width: 300px; /* Maximum width */
+  box-shadow: var(--tw-shadow-sm);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: var(--tw-shadow-lg);
+}
+
+.card:active {
+  transform: scale(0.95);
+  box-shadow: var(--tw-shadow-sm);
+}

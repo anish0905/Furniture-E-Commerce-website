@@ -23,7 +23,7 @@ const BannerSlider = () => {
   return (
     <>
     <div>
-      <Slider {...settings}>
+      <Slider {...settings} className='my-4 '>
         <div>
           <img src={banner1} alt="Banner 1" style={{ width: '100%', height: '40vh', objectFit: 'cover' }} />
         </div>
@@ -43,9 +43,9 @@ const BannerSlider = () => {
       </Slider>
      
     </div>
-    <h1 className='text-3xl text-center font-bold py-3'>HomeLine This is Awesome Product</h1>
-     <div>
-     <video src={banner6} style={{ width: '100%', height: '40vh', objectFit: 'cover' }} controls autoPlay loop muted />
+    <h1 className='lg:text-3xl text-xl text-center font-bold py-3 my-4'>HomeLine This is Awesome Product</h1>
+     <div className='my-4 '>
+     <video src={banner6} style={{ width: '100%', height: '40vh', objectFit: 'cover' }}  autoPlay loop muted />
    </div>
    </>
   );

@@ -3,7 +3,8 @@ import React from 'react';
 
 const SalesAdOffer = ({img , title,des,offer,price}) => {
   return (
-    <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+    <div className='flex  items-center content-center justify-center'>
+      <div className="flex flex-col items-center content-center justify-center bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden my-4">
       <img 
         src={img}
         alt="Sales Offer" 
@@ -20,6 +21,7 @@ const SalesAdOffer = ({img , title,des,offer,price}) => {
           Shop Now
         </button>
       </div>
+    </div>
     </div>
   );
 }

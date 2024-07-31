@@ -2,11 +2,13 @@ import React from 'react';
 
 const Card = ({ img, title }) => {
   return (
-    <div className="w-64 border border-gray-200 rounded-lg overflow-hidden shadow-lg bg-white">
-      <div className="h-40 overflow-hidden">
+    <div className='flex justify-center content-center'>
+      <div className="w-80 border border-gray-200 rounded-lg overflow-hidden  bg-white my-4 card ">
+      <div className="h-72 overflow-hidden">
         <img src={img} alt={title} className="w-full h-full object-cover" />
       </div>
-      <h3 className="p-4 text-lg font-semibold text-gray-800">{title}</h3>
+      <h3 className="p-4 text-lg font-semibold text-gray-800 text-center">{title}</h3>
+    </div>
     </div>
   );
 }

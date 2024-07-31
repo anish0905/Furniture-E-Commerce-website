@@ -26,14 +26,14 @@ const DealsHeader = () => {
   }
 
   return (
-    <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white p-6 rounded-lg shadow-lg ">
-      <h1 className="text-3xl font-extrabold text-center mb-4 animate-slideLeftRight">
+    <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-6  shadow-lg my-4">
+      <h1 className="lg:text-3xl text-xl font-extrabold text-center mb-4 animate-slideLeftRight">
         Deals of the Week || Deals of the Day
       </h1>
       <div className="flex justify-center items-center space-x-4">
         {['hours', 'minutes', 'seconds'].map((unit, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className="text-4xl font-bold bg-white text-blue-600 rounded-full p-4 shadow-lg">
+            <div className="lg:text-4xl text-2xl font-bold bg-white text-blue-600 rounded-full p-4 shadow-lg">
               {String(timeLeft[unit]).padStart(2, '0')}
             </div>
             <span className="text-lg mt-2">{unit.charAt(0).toUpperCase() + unit.slice(1)}</span>
