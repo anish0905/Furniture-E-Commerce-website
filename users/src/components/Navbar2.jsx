@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaChevronDown } from 'react-icons/fa'; // Importing a chevron icon
+import React, { useState } from "react";
+import { FaChevronDown } from "react-icons/fa"; // Importing a chevron icon
 
 const Navbar2 = () => {
   const [hoveredCategory, setHoveredCategory] = useState(null);
@@ -7,52 +7,72 @@ const Navbar2 = () => {
   const categories = [
     {
       name: "Living Room Furniture",
-      subcategories: ["Sofas", "Coffee Tables", "TV Stands","Sofas", "Coffee Tables", "TV Stands","Sofas", "Coffee Tables", "TV Stands","Sofas", "Coffee Tables", "TV Stands","Sofas", "Coffee Tables", "TV Stands"]
+      subcategories: [
+        "Sofas",
+        "Coffee Tables",
+        "TV Stands",
+        "Sofas",
+        "Coffee Tables",
+        "TV Stands",
+        "Sofas",
+        "Coffee Tables",
+        "TV Stands",
+        "Sofas",
+        "Coffee Tables",
+        "TV Stands",
+        "Sofas",
+        "Coffee Tables",
+        "TV Stands",
+      ],
     },
     {
       name: "Bedroom Furniture",
-      subcategories: ["Beds", "Wardrobes", "Nightstands"]
+      subcategories: ["Beds", "Wardrobes", "Nightstands"],
     },
     {
       name: "Office Furniture",
-      subcategories: ["Desks", "Office Chairs", "Bookcases"]
+      subcategories: ["Desks", "Office Chairs", "Bookcases"],
     },
     {
       name: "Outdoor Furniture",
-      subcategories: ["Patio Sets", "Outdoor Chairs", "Garden Tables"]
+      subcategories: ["Patio Sets", "Outdoor Chairs", "Garden Tables"],
     },
     {
       name: "Dining Furniture",
-      subcategories: ["Dining Tables", "Dining Chairs", "Buffets"]
+      subcategories: ["Dining Tables", "Dining Chairs", "Buffets"],
     },
     {
       name: "Dining Furniture",
-      subcategories: ["Dining Tables", "Dining Chairs", "Buffets"]
+      subcategories: ["Dining Tables", "Dining Chairs", "Buffets"],
     },
     {
       name: "Dining Furniture",
-      subcategories: ["Dining Tables", "Dining Chairs", "Buffets"]
-    }
+      subcategories: ["Dining Tables", "Dining Chairs", "Buffets"],
+    },
   ];
 
   return (
+<<<<<<< HEAD
     <div className='flex flex-wrap justify-between items-center p-4 lg:px-[10%]'>
+=======
+    <div className="flex flex-wrap justify-between items-center p-4 lg:px-[10%]">
+>>>>>>> 6a72da397d8c865512f80b9337363b97ed3e3565
       {categories.map((category, index) => (
-        <div 
+        <div
           key={index}
-          className='relative p-2'
+          className="relative p-2"
           onMouseEnter={() => setHoveredCategory(index)}
           onMouseLeave={() => setHoveredCategory(null)}
         >
-          <button className='flex items-center p-2  rounded'>
+          <button className="flex items-center p-2  rounded">
             {category.name}
-            <FaChevronDown className='ml-2' />
+            <FaChevronDown className="ml-2" />
           </button>
           {hoveredCategory === index && (
-            <div className='absolute top-full left-0 mt-2 w-48 z-10 bg-white border border-gray-300 rounded shadow-lg'>
+            <div className="absolute top-full left-0 mt-2 w-48 z-10 bg-white border border-gray-300 rounded shadow-lg">
               <ul>
                 {category.subcategories.map((subcategory, subIndex) => (
-                  <li key={subIndex} className='p-2 hover:bg-gray-100'>
+                  <li key={subIndex} className="p-2 hover:bg-gray-100">
                     {subcategory}
                   </li>
                 ))}

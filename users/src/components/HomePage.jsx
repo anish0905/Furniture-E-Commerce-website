@@ -4,11 +4,10 @@ import Navbar2 from "./Navbar2";
 import BannerSlider from "./BannerSlider";
 import CardHome from "./CardHome";
 import DealsHeader from "./DealsHeader";
-import SalesAdOfferHomepage from "./SalesAdOfferHomepage";
+// import SalesAdOfferHomepage from "./SalesAdOfferHomepage";
 
 import Testimonials from "./Testimonials";
-import ProductDescription from "./ProductDescription";
-import { Cateroy } from "./Cateroy";
+import OfferSales from "./OfferSales";
 
 const HomePage = () => (
   <div className="w-full">
@@ -18,11 +17,10 @@ const HomePage = () => (
     </div>
     <BannerSlider />
     <CardHome />
-    <ProductDescription/>
-    <Cateroy/>
-    <DealsHeader/>
-    <SalesAdOfferHomepage/>
-    <Testimonials/>
+    <DealsHeader />
+    <OfferSales />
+    {/* <SalesAdOfferHomepage /> */}
+    <Testimonials />
   </div>
 );
 
