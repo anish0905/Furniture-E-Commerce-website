@@ -17,13 +17,17 @@ import WallPaper from "./WallPaper";
 const HomePage = () => (
   <div className="w-full">
     <BannerSlider />
-    <CardHome />
-    <ProductDescription/>
-    <Cateroy/>
-    <DealsHeader />
-    <OfferSales />
-    {/* <SalesAdOfferHomepage /> */}
-    <Testimonials />
+      <CardHome />
+      <ProductDescription />
+      <Cateroy />
+      <ServiceCard />
+      <CustomizedCurtains />
+      <Blinds/>
+      <WallPaper />
+      <DealsHeader />
+      <OfferSales />
+      {/* <SalesAdOfferHomepage /> */}
+      <Testimonials />
   </div>
 );
 
