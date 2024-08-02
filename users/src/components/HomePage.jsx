@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Navbar2 from "./Navbar2";
+
 import BannerSlider from "./BannerSlider";
 import CardHome from "./CardHome";
 import DealsHeader from "./DealsHeader";
@@ -16,14 +15,9 @@ import Blinds from "./Blinds";
 import WallPaper from "./WallPaper";
 import Footer from "./Footer";
 
-const HomePage = () => {
-  return (
-    <div className="w-full">
-      <Navbar />
-      <div className="lg:block md:block hidden">
-        <Navbar2 />
-      </div>
-      <BannerSlider />
+const HomePage = () => (
+  <div className="w-full">
+    <BannerSlider />
       <CardHome />
       <ProductDescription />
       <Cateroy />
@@ -35,9 +29,11 @@ const HomePage = () => {
       <OfferSales />
       {/* <SalesAdOfferHomepage /> */}
       <Testimonials />
-      <Footer/>
+
+      
     </div>
   );
-};
+
+
 
 export default HomePage;
