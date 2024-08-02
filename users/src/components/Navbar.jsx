@@ -4,6 +4,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import SearchIcon from "@mui/icons-material/Search";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +15,9 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-100 p-4 lg:p-8 shadow-md w-full flex items-center justify-between gap-5 lg:px-32">
-      <div className="lg:text-2xl md:text-xl text-sm font-bold w-1/5">
+      <Link to="/" className="lg:text-2xl md:text-xl text-sm font-bold w-1/5">
         <span> Logo</span>
-      </div>
+      </Link>
       <div className="relative lg:w-1/2 w-full flex items-center">
         <SearchIcon className="absolute left-3 text-gray-500" />
         <input

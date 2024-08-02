@@ -1,6 +1,7 @@
 import React from 'react'
 import CategoryBanner from './categoryBanner'
 import Chandeliers from './Chandeliers'
+import { useParams } from 'react-router-dom';
 
 import ShowCategoryWise from './ShowCategoryWise'
 
@@ -568,20 +569,19 @@ const products =[
   ]
   
 
-  const filterProductsByCategory = (category) => {
-    return products.filter(product => product.category === category);
-  };
+  
   
   const categoryDetails = () => {
-    const chandeliers = filterProductsByCategory('Chandeliers');
-    const pendants = filterProductsByCategory('Pendants');
-    const wallLights = filterProductsByCategory('Wall Lights');
+    const { name } = useParams();
+
+    const filteredProducts = products.filter(product => product.category.toLowerCase() === name.toLowerCase());
     // Add more categories as needed
   
     return (
       <div>
         <CategoryBanner title="Our Products" />
-        <ShowCategoryWise title="Chandeliers" products={chandeliers} />
+        <Chandeliers name={name}/>
+        <ShowCategoryWise products={filteredProducts} />
         {/* <ShowCategoryWise title="Pendants" products={pendants} />
         <ShowCategoryWise title="Wall Lights" products={wallLights} /> */}
         {/* Add more categories as needed */}
