@@ -14,6 +14,7 @@ import { Cateroy } from "./Cateroy";
 import CustomizedCurtains from "./CustomizedCurtains";
 import Blinds from "./Blinds";
 import WallPaper from "./WallPaper";
+import Footer from "./Footer";
 
 const HomePage = () => {
   return (
@@ -34,6 +35,7 @@ const HomePage = () => {
       <OfferSales />
       {/* <SalesAdOfferHomepage /> */}
       <Testimonials />
+      <Footer/>
     </div>
   );
 };
