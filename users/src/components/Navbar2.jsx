@@ -8,45 +8,39 @@ const Navbar2 = () => {
     {
       name: "Living Room Furniture",
       subcategories: [
-        "Sofas",
-        "Coffee Tables",
-        "TV Stands",
-        "Sofas",
-        "Coffee Tables",
-        "TV Stands",
-        "Sofas",
-        "Coffee Tables",
-        "TV Stands",
-        "Sofas",
-        "Coffee Tables",
-        "TV Stands",
-        "Sofas",
-        "Coffee Tables",
-        "TV Stands",
+        "Interior Design",
+        "Blinds",
+        "Customized Curtains",
+        "Artificial Grass",
+        "Vinyl Flooring & Vinyl Plank",
+        "Wallpapers",
+        "WoodenFlooring",
+       
+       
       ],
     },
     {
-      name: "Bedroom Furniture",
+      name: "Architectural Lighting",
       subcategories: ["Beds", "Wardrobes", "Nightstands"],
     },
     {
-      name: "Office Furniture",
+      name: "Ceiling Fans ",
       subcategories: ["Desks", "Office Chairs", "Bookcases"],
     },
     {
-      name: "Outdoor Furniture",
+      name: "Home Decor",
       subcategories: ["Patio Sets", "Outdoor Chairs", "Garden Tables"],
     },
     {
-      name: "Dining Furniture",
+      name: "Store Locator",
       subcategories: ["Dining Tables", "Dining Chairs", "Buffets"],
     },
     {
-      name: "Dining Furniture",
+      name: "More",
       subcategories: ["Dining Tables", "Dining Chairs", "Buffets"],
     },
     {
-      name: "Dining Furniture",
+      name: "Sale",
       subcategories: ["Dining Tables", "Dining Chairs", "Buffets"],
     },
   ];
