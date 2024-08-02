@@ -4,11 +4,15 @@ import BannerSlider from "./BannerSlider";
 import CardHome from "./CardHome";
 import DealsHeader from "./DealsHeader";
 // import SalesAdOfferHomepage from "./SalesAdOfferHomepage";
+import ServiceCard from "./ServiceCard";
 
 import Testimonials from "./Testimonials";
 import OfferSales from "./OfferSales";
 import ProductDescription from "./ProductDescription";
 import { Cateroy } from "./Cateroy";
+import CustomizedCurtains from "./CustomizedCurtains";
+import Blinds from "./Blinds";
+import WallPaper from "./WallPaper";
 
 const HomePage = () => (
   <div className="w-full">
